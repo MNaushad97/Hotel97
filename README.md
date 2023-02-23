@@ -27,7 +27,7 @@ The third project (Aug 2022-Oct 2022) is inspired from AirBnb website
 > Allow the image to load
 
 <span>  <img src="https://github.com/MNaushad97/Hotel97/blob/main/src/images/hotelMobileInput.gif"  width="156" height="239.28" />  </span>
-<img src="https://github.com/MNaushad97/Hotel97/blob/main/src/images/hotelWebHome.gif" width="403" />
+<img src="https://github.com/MNaushad97/Hotel97/blob/main/src/images/hotelWebInput.gif" width="403" />
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
