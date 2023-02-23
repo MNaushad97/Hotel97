@@ -1,18 +1,11 @@
 import React from "react";
 import SearchButton from "./SearchButton";
 import InputDestination from "./InputDestination";
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 import DatePicker from "./DatePicker";
-import { Link } from "react-router-dom";
 import Counter from "./Counter";
-import Search from "@mui/icons-material/Search";
-import { Button } from "@mui/material";
-import SearchKeysContext from "./store/SearchKeysContext";
 import SearchIcon from "./SearchIcon";
 
-const Location = (
-  <span class="material-symbols-outlined rotate-45">flight</span>
-);
 const hotelIcon = <span class="material-symbols-outlined">hotel</span>;
 
 const Calendar = <span class="material-symbols-outlined">calendar_month</span>;
@@ -62,13 +55,13 @@ function Searchfields() {
   };
   return (
     <>
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-cente ">
         <div
           id="tabContent"
-          className={
-            windowWidth < 699
-              ? " px-6  backdrop-blur-[2.5px]  bg-white/40 border py-[38px] transition-transform ease-in border-gray-200  mt-4  z-[7] m-0 rounded-full  ease-[cubic-bezier(0.25, 0.46, 0.45, 0.94)] transition-all duration-[250ms] shadow-[0px_8px_5px_-5px_rgba(0,0,0,0.7)] flex justify-center flex-col   hover:shadow[0_16px_10px_-10px_rgba(0,0,0,0.7)]   hover:scale-[1.016]"
-              : " px-2   bg-white border py-[38px] transition-transform ease-in border-gray-200    z-10 m-0 rounded-full  ease-[cubic-bezier(0.25, 0.46, 0.45, 0.94)] transition-all duration-[250ms] shadow-[0px_8px_5px_-5px_rgba(0,0,0,0.7)] flex justify-center   py-1 fixed top-[70px] mt-0  hover:shadow[0_16px_10px_-10px_rgba(0,0,0,0.7)]   hover:scale-[1.016]"
+          className={`m-0 border py-[6px] transition-transform ease-in border-gray-200 rounded-full  ease-[cubic-bezier(0.25, 0.46, 0.45, 0.94)]  duration-[250ms] shadow-[0px_8px_5px_-5px_rgba(0,0,0,0.7)] flex justify-center hover:shadow[0_16px_10px_-10px_rgba(0,0,0,0.7)] hover:scale-[1.016]
+          ${windowWidth < 699?
+          "px-6 flex-col  backdrop-blur-[2.5px]  bg-white/40  mt-4  z-[7]"
+          :"px-2 bg-white z-10 fixed top-[70px] mt-0 transition-all "}`
           }
         >
           {!DestinationClicked ? (

@@ -1,7 +1,7 @@
 import React from "react";
-import { useState, useCallback, useContext } from "react";
+import { useCallback } from "react";
 import { Button } from "@mui/material";
-import SearchKeysContext from "./store/SearchKeysContext";
+
 
 function Counter({ count, setCount }) {
   const decreament = useCallback(() => {

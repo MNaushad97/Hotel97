@@ -4,10 +4,7 @@ import Hotel2 from "../src/images/hotels/f2.jpg";
 import Banner from "./Banner";
 import Searchfields from "./SearchFields";
 import Card from "./Mould_Card";
-import sampleHotelList from "./sampleHotelList";
-import Footer from "./Footer";
 import img from "./images/hotels/1.jpg";
-import HotelIcon from "@mui/icons-material/Hotel";
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -27,7 +24,7 @@ const Home = () => {
         {windowWidth > 698 ? (
           <Banner />
         ) : (
-          <img src={img} className="absolute z-[-5] h-fit w-screen" />
+          <img src={img} alt="" className="absolute z-[-5] h-fit w-screen" />
         )}
         <Searchfields className="  " />
         {/* <img src={img} className="absolute z-[-5] h-screen w-screen" /> */}

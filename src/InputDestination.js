@@ -1,7 +1,7 @@
 import React from "react";
 import { TextField, Autocomplete } from "@mui/material";
-import { useState, useContext, useEffect } from "react";
-import SearchKeysContext from "./store/SearchKeysContext";
+import { useState,  useEffect } from "react";
+
 
 //import styled from "styled-components";
 
@@ -35,11 +35,7 @@ function InputDestination({ selectedDestination, setNewDestination }) {
 
   return (
     <div
-      className={
-        windowWidth > 699
-          ? "  m-0 rounded-full   pt-0.5  ml-[20px] "
-          : "  m-0 rounded-full   pt-0.5  ml-[105px]  "
-      }
+      className={`m-0 rounded-full pt-0.5 ${windowWidth > 699?"ml-[20px]":"ml-[105px]"}`}
     >
       <Autocomplete
         value={selectedDestination}

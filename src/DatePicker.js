@@ -2,28 +2,18 @@ import React from "react";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
-import { useState, useContext, useHistory, useEffect } from "react";
-import { Button } from "@mui/material";
+import { useState,  useEffect } from "react";
 
 //import { DateRangePicker } from "@mui/";
 import {
   addDays,
   endOfDay,
-  startOfDay,
-  startOfYear,
-  startOfMonth,
   endOfMonth,
-  endOfYear,
   addMonths,
   addWeeks,
-  addYears,
-  startOfWeek,
   endOfWeek,
   isSameDay,
-  differenceInCalendarDays,
 } from "date-fns";
-import SearchKeysContext from "./store/SearchKeysContext";
-import { Search } from "@mui/icons-material";
 
 function DatePicker({ startDate, setStartDate, endDate, setEndDate }) {
   // const history = useHistory();

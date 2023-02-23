@@ -1,11 +1,8 @@
 import LogoImg from "./images/hotel_97.png";
-import SearchIcon from "@mui/icons-material/Search";
-
 import GTranslateIcon from "@mui/icons-material/GTranslate";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Avatar from "@mui/material/Avatar";
 import React from "react";
-import Searchfields from "./SearchFields";
 import { Link } from "react-router-dom";
 
 function Header() {

@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import Searchfields from "./SearchFields";
 
 function Banner() {
   return (

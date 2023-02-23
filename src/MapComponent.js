@@ -1,6 +1,6 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "@mui/material";
 
 function MapComponent(locations) {
@@ -65,11 +65,11 @@ function MapComponent(locations) {
               id={detail.id}
               key={detail.key}
               //text={`₹` + detail.price * 1800}
-              className={
-                detail.key == receivedHighlight && receivedStillThere
-                  ? "bg-[#ff7779]  text-white transition-transform duration-200 ease-linear scale-[1.24] text-[16px] py-[1px] px-[3px] shadow-lg flex text-center items-center justify-center rounded-3xl"
-                  : "bg-white  font-semibold text-[14px] py-[1px] px-[1px] shadow-lg flex text-center items-center justify-center rounded-3xl hover:text-[#1876D1] hover:bg-white"
-              }
+              className={`shadow-lg flex text-center items-center justify-center rounded-3xl py-[1px] 
+              ${detail.key === receivedHighlight && receivedStillThere
+                ?"bg-[#ff7779]  text-white transition-transform duration-200 ease-linear scale-[1.24] text-[16px] px-[3px]"
+                :"bg-white  font-semibold text-[14px] px-[1px] hover:text-[#1876D1] hover:bg-white"}`}
+             
             >
               {`₹` + detail.price * 1800}
             </Button>
@@ -98,6 +98,7 @@ function MapComponent(locations) {
             >
               <div className="mb-1">
                 <img
+                  alt=""
                   src={detail.img}
                   className="w-[200px] rounded-xl h-[150px] "
                 />

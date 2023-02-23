@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "@mui/material";
+
 import { useLocation } from "react-router-dom";
-import { useParams } from "react-router-dom";
+
 import Mould_buttons from "./Mould_buttons";
-import SearchIcon from "./SearchIcon";
+
 import { Search } from "@mui/icons-material";
 import MapComponent from "./MapComponent";
 import CardsResults from "./CardsResults";
@@ -11,7 +11,7 @@ import sampleHotelList from "./sampleHotelList";
 
 const filterIcon = <span class="material-symbols-outlined ml-2">tune</span>;
 function SearchPage() {
-  const params = useParams();
+
   //const { state:{selectedDestination, count, startDate, endDate }} = useLocation();
   const { state: searchFilters } = useLocation();
   const [highlight, setHighLight] = useState(1);
@@ -93,10 +93,7 @@ function SearchPage() {
       <hr className="line border-t-[1px] border-solid border-slate-200 mb-0" />
       <div className="rentalContent flex justify-start h-[calc(100vh-135px)]">
         <div
-          className={
-            windowWidth > 1200
-              ? "rentalContentLeft w-[50%] p-[1px] h-[calc(100vh-150px)] overflow-scroll"
-              : "rentalContentLeft w-[100%] p-[1px] h-[calc(100vh-150px)] overflow-scroll"
+          className={`rentalContentLeft p-[1px] h-[calc(100vh-150px)] overflow-scroll ${windowWidth > 1200?"w-[50%]":"w-[100%]"}`
           }
         >
           <div className="searchPage__info p-1 ">
