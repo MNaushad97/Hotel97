@@ -1,10 +1,11 @@
-# Hotel97 : An online hotel booking website
+# Hotel97
 
 visit-> https://hotel-97.web.app/
 
-The third project (Aug 2022-Oct 2022) is inspired from AirBnb website
+### →  A responsive app designed for searching accommodations
+> Hosted on Google firebase
 
-**used React+Tailwind CSS + redux**
+**Built using React framework along with the Tailwind CSS utility-first framework for styling**
 
 
 ### →  responsive web app
@@ -31,7 +32,7 @@ The third project (Aug 2022-Oct 2022) is inspired from AirBnb website
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### →  used Google Map API to locate hotels
+### →  Google Map API is used to pinpoint the hotels on the map.
 
 > Allow the image to load
 
