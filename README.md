@@ -5,10 +5,9 @@ visit-> https://hotel-97.web.app/
 ### →  A responsive app designed for searching accommodations
 > Hosted on Google firebase
 
-**Built using React framework along with the Tailwind CSS utility-first framework for styling**
+**Built using `React` framework along with the `Tailwind CSS` utility-first framework for styling**
 
 
-### →  responsive web app
 
 > Allow the images to load
 
