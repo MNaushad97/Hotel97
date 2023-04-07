@@ -2,7 +2,6 @@
 
 visit-> https://hotel-97.web.app
 
-
 ### →  A responsive app designed for searching accommodations
 > Hosted on Google firebase
 
